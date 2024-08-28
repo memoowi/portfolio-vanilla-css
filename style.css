@@ -2,6 +2,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
-
+:root {
+    font-family: 'Sora', sans-serif;
+    /* COLORS */
+    --Primary-Black: #000000;
+    --Primary-Neutral: #404040;
+    --Primary-White: #FFFFFF;
+    --Zinc-100: #f4f4f5;
+    --Zinc-200: #e4e4e7;
+    --Zinc-300: #d4d4d8;
+    --Zinc-500: #71717a;
+    --Zinc-800: #27272a;
+    --Error: #ef4444;
+    /* Typhography */
+    --Display-Size: 48px;
+    --Display-LH: 1.16;
+    --Display-Track: -0.96px;
+    --Display-Size-M: 24px;
+    --Display-LH-M: 1.14;
+    --Display-Track-M: -0.56px;
+    --Sub-Heading-Size: 40px;
+    --Sub-Heading-LH: 1.2;
+    --Sub-Heading-Track: -0.8px;
+    --Heading1-Size: 36px;
+    --Heading1-LH: 1.22;
+    --Heading1-Track: -0.72px;
+    --Heading2-Size: 32px;
+    --Heading2-LH: 1.25;
+    --Heading2-Track: -0.64px;
+}
