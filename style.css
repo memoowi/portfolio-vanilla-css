@@ -182,12 +182,26 @@ h2 b {
     font-weight: 800;
 }
 .skill-boxes {
-    background-color: blue;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 .skill {
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 32px;
+    align-items: center;
+    border: 2px solid var(--Primary-Black);
+    border-radius: 4px;
+    background-color: var(--Primary-White);
+    transition: all 0.3s ease-in-out;
+}
+.skill:hover{
+  filter: invert(1);
+}
+.skill img {
+  width: 56px;
+  aspect-ratio: 1;
 }
