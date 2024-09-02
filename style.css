@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -60,6 +61,7 @@
   --Button2-Text-Size: 16px;
   --Button2-Text-LH: 1.25;
   --Button2-Text-Track: -0.32px;
+  --Burger-Width: 36px;
   color: var(--Primary-Black);
 }
 
@@ -92,9 +94,19 @@ header {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  /* display: flex;
+  flex-direction: column;
+  width: var(--Burger-Width);
+  height: var(--Burger-Width);
+  justify-content: space-between; */
 }
 .menu button:hover {
   background-color: var(--Zinc-100);
+}
+.burger {
+  width: var(--Burger-Width);
+  height: 2px;
+  background-color: var(--Primary-Black);
 }
 section {
   padding: 40px 16px;
@@ -512,4 +524,7 @@ footer .brand, .copy p a {
 }
 .copy {
   text-align: end;
+}
+nav, .resume {
+  display: none;
 }

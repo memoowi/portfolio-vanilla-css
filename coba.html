@@ -5,24 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      :root {
+        --width: 100px;
+      }
       button {
         display: flex;
         flex-direction: column;
         gap: 10px;
         margin: 0;
         padding: 0;
-        width: 100px;
-        height: 100px;
+        width: var(--width);
+        height: var(--width);
         justify-content: space-between;
       }
       .line {
-        width: 100px;
+        width: var(--width);
         height: 2px;
         background-color: red;
         transition: all 0.3s ease-in-out;
       }
       .rotate-1 {
-        width: calc(100px * sqrt(2));
+        width: calc(var(--width) * sqrt(2));
         transform: rotate(45deg);
         transform-origin: 0%;
       }
