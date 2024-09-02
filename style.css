@@ -110,6 +110,7 @@ header {
   width: var(--Burger-Width);
   height: 2.5px;
   background-color: var(--Primary-Black);
+  transition: all 0.3s ease-in-out;
 }
 .rotate-1 {
   width: calc(var(--Burger-Width) * sqrt(2));
@@ -120,6 +121,42 @@ header {
   width: calc(var(--Burger-Width) * sqrt(2));
   transform: rotate(-45deg);
   transform-origin: 0%;
+}
+.hide {
+  scale: 0;
+}
+.menu-content {
+  background-color: var(--Primary-White);
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  transform: translateY(-150%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.menu-content a {
+  color: var(--Primary-Black);
+}
+.menu-content a:last-child {
+  background-color: var(--Primary-Black);
+  color: var(--Primary-White);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 8px;
+  width: 100%;
 }
 section {
   padding: 40px 16px;
