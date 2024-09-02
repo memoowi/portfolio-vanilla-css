@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        width: 100px;
+        height: 100px;
+        justify-content: space-between;
+      }
+      .line {
+        width: 100px;
+        height: 2px;
+        background-color: red;
+        transition: all 0.3s ease-in-out;
+      }
+      .rotate-1 {
+        width: calc(100px * sqrt(2));
+        transform: rotate(45deg);
+        transform-origin: 0%;
+      }
+      .rotate-2 {
+        width: calc(141px);
+        transform: rotate(-45deg);
+        transform-origin: 0%;
+      }
+      .hide {
+        scale: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="main">
+      <div class="line"></div>
+      <div class="line line-hide"></div>
+      <div class="line line-2"></div>
+    </button>
+    <script>
+      const button = document.querySelector(".main");
+      const line = document.getElementsByClassName("line");
+      button.addEventListener("click", () => {
+        line[1].classList.toggle("hide");
+        line[0].classList.toggle("rotate-1");
+        line[2].classList.toggle("rotate-2");
+      });
+    </script>
+  </body>
+</html>
