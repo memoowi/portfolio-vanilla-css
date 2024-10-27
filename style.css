@@ -425,7 +425,7 @@ h2 b {
   align-items: center;
   box-shadow: 0px 8px 16px -6px rgba(0, 0, 0, 0.3);
   background-color: var(--Primary-White);
-  transition: filter 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .testi-img {
   width: 96px;
@@ -437,7 +437,6 @@ h2 b {
   border-radius: 100%;
   width: 100%;
   object-fit: cover;
-  transition: filter 0.3s ease-in-out;
 }
 .quote-box {
   position: absolute;
@@ -450,6 +449,7 @@ h2 b {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease-in-out;
 }
 .testi-box p {
   font-size: var(--Button2-Text-Size);
@@ -457,11 +457,13 @@ h2 b {
   letter-spacing: var(--Button2-Text-Track);
   color: var(--Primary-Neutral);
   text-align: center;
+  transition: all 0.3s ease-in-out;
 }
 .line {
   width: 120px;
   height: 2px;
   background-color: var(--Primary-Black);
+  transition: all 0.3s ease-in-out;
 }
 .testi-box h5 {
   font-size: var(--Heading5-Size);
@@ -470,6 +472,7 @@ h2 b {
   color: var(--Primary-Neutral);
   text-align: center;
   font-weight: 600;
+  transition: all 0.3s ease-in-out;
 }
 .testi-box span {
   font-size: var(--Heading6-Size);
@@ -478,9 +481,12 @@ h2 b {
   color: var(--Zinc-500);
   font-weight: 600;
   text-align: center;
+  transition: all 0.3s ease-in-out;
 }
-.testi-box:hover,
-.testi-box:hover .testi-img img {
+.testi-box:hover {
+  background-color: var(--Primary-Black);
+}
+.testi-box:hover > :is( p, .line, h5, span) {
   filter: invert(1);
 }
 form {

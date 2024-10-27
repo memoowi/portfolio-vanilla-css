@@ -42,7 +42,6 @@
   .contact {
     display: flex;
     gap: 32px;
-    align-items: center;
   }
 }
 @media (min-width: 1024px) {
