@@ -62,6 +62,7 @@
   --Button2-Text-Track: -0.32px;
   --Burger-Width: 36px;
   color: var(--Primary-Black);
+  scroll-behavior: smooth;
 }
 
 header {
@@ -179,16 +180,18 @@ section {
   gap: 32px;
 }
 .hero-text h1 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   font-size: var(--Display-Size-M);
   line-height: var(--Display-LH-M);
   letter-spacing: var(--Display-Track-M);
   font-weight: 400;
 }
-.hero-text h1 strong,
-.hero-text h1 b {
+.hero-text h1 > span > b {
   font-weight: 800;
 }
-.hero-text h1 span {
+.hero-text h1 > span > span {
   /* -webkit-text-stroke-width: 1.4px;
   -webkit-text-stroke-color: var(--Primary-Black); */
   font-weight: 800;
@@ -579,9 +582,9 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-footer .brand,
-.copy p a {
-  color: inherit;
+/* footer a .brand svg , */
+footer > a .brand, .copy p a {
+  color: var(--Primary-White);
 }
 .copy {
   text-align: end;

@@ -65,9 +65,9 @@
         gap: 32px;
     }
     nav a {
-        font-size: var(--Heading5-Size);
-        line-height: var(--Heading5-LH);
-        letter-spacing: var(--Heading5-Track);
+        font-size: var(--Heading6-Size);
+        line-height: var(--Heading6-LH);
+        letter-spacing: var(--Heading6-Track);
         font-weight: 500;
         color: var(--Primary-Black);
     }
@@ -87,5 +87,19 @@
     }
     .menu-content {
       display: none;
+    }
+    .hero-text h1 {
+      gap: 20px;
+      font-size: var(--Display-Size);
+      line-height: var(--Display-LH);
+      letter-spacing: var(--Display-Track);
+    }
+    h2 {
+      font-size: var(--Display-Size);
+      line-height: var(--Display-LH);
+      letter-spacing: var(--Display-Track);
+    }
+    .about-me {
+      align-items: flex-start;
     }
 }
